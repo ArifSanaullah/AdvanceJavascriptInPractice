@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+
+        <h1>Item one</h1>
+        <h1>Item two</h1>
+
+    </div>
+
+    <script>
+    
+        var eDF = document.createDocumentFragment();
+        var hNode = document.createElement("h3");
+        var pNode = document.createElement("p");
+        var targetNode = document.getElementById("myid");
+        // text for new elements
+        hNode.textContent = "This is new text from JS in h3";
+        pNode.textContent = "This is new text from js in p";
+        console.log(hNode);
+        console.log(pNode);
+        eDF.appendChild(hNode);
+        eDF.appendChild(pNode)
+        targetNode.appendChild(eDF)
+        console.log(eDF)
+
+    </script>
+</body>
+</html>

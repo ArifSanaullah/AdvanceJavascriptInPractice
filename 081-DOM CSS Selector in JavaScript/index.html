@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+    
+        li::before {
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            background: red;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+
+        }
+    
+    </style>
+  </head>
+  <body>
+    <h1 id="myheading">Arif Sanaullah</h1>
+    <img src="./1.png" alt="" width="30%" height="20%" />
+    <img src="./2.png" alt="" width="30%" height="20%" />
+    <div>
+      <ul id="myl">
+        <li class="game">Item 1</li>
+        <li class="supergame">Item 2</li>
+        <li class="game-super">Item 3</li>
+        <li class="gamesuper">Item 4</li>
+        <li class="game super">Item 5</li>
+        <li class="game">Item 6</li>
+        <li class="super game">Item 7</li>
+        <li class="super">Item 8</li>
+      </ul>
+    </div>
+    <p class="red black">My Paragraph No. 1</p>
+    <p title="" class="red">My Paragraph No. 2</p>
+    <p title="mypara3" class="black">My Paragraph No. 3</p>
+    <p id="book">My Paragraph No. 4</p>
+    <h3 class="red">heading 3</h3>
+    <h4 id="book">heading 4</h4>
+
+    <script>
+      // element selector
+      // var list = document.querySelectorAll("p");
+      // console.log(list);
+
+      //   group selector
+      //   var list = document.querySelectorAll("div, p, ul");
+      //   console.log(list);
+
+      // universal selector
+    //   var list = document.querySelectorAll("*");
+    //   console.log(list);
+
+    // class selector
+        // univesal style class
+        // var list = document.querySelectorAll(".game");
+        // console.log(list);
+
+        // element specific style class
+        // var list = document.querySelectorAll("p.red");
+        // console.log(list);
+
+        // attribute selector
+        // var list = document.querySelectorAll("[class *= 'game']");
+        // console.log(list)
+
+        // pseudo class
+            // first-child
+            var list = document.querySelectorAll("li:last-child");
+            console.log(list)
+    </script>
+  </body>
+</html>

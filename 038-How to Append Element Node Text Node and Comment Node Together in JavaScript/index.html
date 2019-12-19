@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>Item one</h1>
+        <h1>Item two</h1>
+    </div>
+
+
+    <script>
+    
+        var targetNode = document.getElementById("myid")
+        var nENode = document.createElement("h2");
+        var nTNode = document.createTextNode("This is text from JS");
+        var nCNode = document.createComment("This is comment from JS");
+        nENode.append(nTNode);
+        targetNode.appendChild(nENode);
+        nENode.appendChild(nCNode);
+        console.log(targetNode);
+    
+    </script>
+
+</body>
+</html>

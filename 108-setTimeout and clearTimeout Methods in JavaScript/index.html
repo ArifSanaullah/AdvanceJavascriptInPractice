@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>setTimeout()</h1>
+    <h1>clearTimeout()</h1>
+    <p id="myPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste velit consequatur quae culpa maxime optio non perferendis omnis possimus doloribus qui a recusandae adipisci reprehenderit aliquid, voluptatem eveniet exercitationem dignissimos autem. Qui nam explicabo sunt repudiandae consequatur esse delectus dolores, illum fugit, iusto quos nulla. Necessitatibus nesciunt quas animi!</p>
+    <button type="button" id="clearBtn">Clear Time</button>
+
+    <script>
+    
+        var timeoutID = setTimeout(() => {
+            document.getElementById("myPara").style.backgroundColor = "red";
+        }, 2000);
+        function clearTime() {
+            clearTimeout(timeoutID);
+        }
+        document.getElementById("clearBtn").addEventListener("click", clearTime);
+    
+    </script>
+</body>
+</html>

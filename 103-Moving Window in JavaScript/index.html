@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- moveBy()  -->
+    <!-- window.moveBy(horizontalPixels, verticalPixels) -->
+    <h1>Moving Window</h1>
+    <button type="button" id="openBtn">Open Window</button>
+    <button type="button" id="moveBtn">Move Window</button>
+    <button type="button" id="resizeBtn">Resize Window</button>
+    <script>
+    
+        var newWindow;
+        function openWindow() {
+            newWindow = window.open("", "_blank", "width=300, height=200");
+            newWindow.document.write("I'm new window");
+        }
+        function moveWindow() {
+            // newWindow.moveBy(100, 100);
+            newWindow.moveTo(200, 200);
+            newWindow.focus();
+        }
+        function resizeWindow() {
+            newWindow.resizeTo(200, 200)
+            newWindow.focus();
+        }
+        document.getElementById("openBtn").addEventListener("click", openWindow);
+        document.getElementById("moveBtn").addEventListener("click", moveWindow);
+        document.getElementById("resizeBtn").addEventListener("click", resizeWindow);
+    
+    </script>
+</body>
+</html>

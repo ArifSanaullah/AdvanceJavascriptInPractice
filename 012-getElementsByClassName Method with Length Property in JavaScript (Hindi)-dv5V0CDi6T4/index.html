@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>011-getElementsByClassName More Specific Method in JavaScript</title>
+  </head>
+  <body>
+    <h1>Heading one</h1>
+    <h1>heading ono-two</h1>
+    <h2>now</h2>
+    <p class="geek">
+      Hello <span>Wrold</span><em>The</em><span>New Wrold</span>
+    </p>
+    <p class="myclass"><span>bye</span>New World</p>
+    <div id="show">
+      <p>first p inside div</p>
+      <p class="geek">inside geek with class geek</p>
+    </div>
+
+    <script>
+      let len = document.getElementsByClassName("geek").length;
+      console.log(len);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+
+        <h1>Item one</h1>
+        <h1>Item two</h1>
+
+    </div>
+
+
+
+    <script>
+    
+        var targetNode = document.getElementById("myid");
+
+        // create textNode to appent
+
+        var nTNode = document.createTextNode("Text by JS");
+        targetNode.append(nTNode);
+        var nCNode = document.createComment("Comment from JS");
+        targetNode.append(nCNode);
+        console.log(targetNode);
+    
+    </script>
+</body>
+</html>

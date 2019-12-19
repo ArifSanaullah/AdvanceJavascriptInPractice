@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title class="geek">querySelectorAll | 15</title>
+  </head>
+  <body>
+    <h1>Heading one</h1>
+    <h1 class="geek myclass">heading ono-two</h1>
+    <h2>now</h2>
+    <p class="geek">
+      Hello <span>Wrold</span><em>The</em><span>New Wrold</span>
+    </p>
+    <p class="myclass"><span>bye</span>New World</p>
+    <div id="show">
+      <p>first p inside div</p>
+      <p class="geek">inside geek with class geek</p>
+    </div>
+    <p id="show1">
+      i am paragraph
+    </p>
+    <d id="show1">I'm something div like.</d>
+    <script>
+        // Element selector
+        // var result = document.querySelectorAll("p,div, #show");
+        // document.write(result);
+        // console.log(result);
+
+        // Attribute selector
+        var result = document.querySelectorAll("div[id='show']");
+        console.log(result)
+    </script>
+  </body>
+</html>

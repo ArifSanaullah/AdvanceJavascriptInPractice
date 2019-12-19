@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="body-id">
+    
+    <h1 id="id-one">
+        <!-- thi is heading --> heading
+        </h1> 
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div id="one">
+        <div class="one-one"></div>
+        <div class="one-two"></div>
+        <div class="one-three"></div>
+    </div>
+
+    <!-- => childNodes  =>  returns all type if nodes-->
+    <!-- => children => returns collections of child elements. it returns on element nodes.(no text nodes)-->
+
+
+    <script>
+        var result = document.getElementById('body-id');
+        console.log(result.childNodes)
+        console.log(result.childNodes.length);
+    </script>
+</body>
+</html>

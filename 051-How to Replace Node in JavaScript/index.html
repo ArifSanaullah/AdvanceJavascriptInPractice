@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="myul">
+      <li>item 1</li>
+      <li id="item_2">item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+
+    <span id="myspan">Span</span>
+
+    <script>
+    
+        var u = document.getElementById("myul");
+        var i = document.getElementById("item_2");
+        // var newChild = document.createElement("li");
+        // newChild.textContent = "Item n";
+        var newChild = document.getElementById("myspan");
+        var replacedChild = u.replaceChild(newChild, i);
+        console.log(replacedChild);
+
+    </script>
+  </body>
+</html>

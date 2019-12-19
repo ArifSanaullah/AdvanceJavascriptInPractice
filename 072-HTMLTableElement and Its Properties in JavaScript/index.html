@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1" id="mytable">
+      <caption>My table</caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+
+      <tbody id="mytbody">
+          <tr>
+              <td>11</td>
+              <td>Arif</td>
+              <td>Javascript</td>
+          </tr>
+          <tr>
+              <td>22</td>
+              <td>Sana</td>
+              <td>PHP</td>
+          </tr>
+          <tfoot>
+              <tr>
+                  <td>44</td>
+                  <td>Saim</td>
+                  <td>Json</td>
+              </tr>
+          </tfoot>
+      </tbody>
+    </table>
+
+
+    <script>
+    
+        var table = document.getElementById("mytable");
+        // var tCap = table.caption;
+        // console.log(tCap.innerHTML);
+        var theadr = table.tHead;
+        console.log(theadr);
+        var newRow = table.insertRow(-1);
+        newRow.insertCell(-1).textContent = "New Data";
+        table.deleteRow(-1);
+
+        var tbody = document.getElementById("mytbody");
+        console.log(tbody.rows)
+    
+    </script>
+  </body>
+</html>

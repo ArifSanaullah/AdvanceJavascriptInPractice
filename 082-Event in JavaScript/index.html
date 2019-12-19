@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Binding</h1>
+    <button id="mybtn">Click me</button>
+
+    <script>
+    
+        var btn = document.getElementById("mybtn");
+        // btn.onclick = function display() {
+        //     alert("Button clicked");
+        // };
+        function display() {
+            alert("Button clicked");
+        };
+        btn.onclick = display;
+    
+    </script>
+    
+</body>
+</html>

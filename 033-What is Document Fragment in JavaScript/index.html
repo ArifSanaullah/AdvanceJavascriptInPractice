@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">
+        <!-- <h1 id="myh1">Item 1</h1> -->
+        <h1>Item one</h1>
+        <h1>Item two</h1>
+    </div>
+    <!-- <section id="mysec">
+
+    </section> -->
+
+
+
+    <script>
+        
+        var df = document.createDocumentFragment();
+        console.log(df);
+        // var myDiv = document.getElementById("one");
+        // var parent = document.getElementById('mysec');
+        // var child = document.getElementById('myh1');
+        // parent.appendChild(child);
+        // console.log(myDiv);
+        // console.log(parent);
+
+        // creating a new element node h2
+        var nEh2 = document.createElement('h2');
+        var targetNode = document.getElementById("one");
+
+        // appdengin new h2 to div
+        // targetNode.appendChild(nEh2);
+        console.log(targetNode);
+
+    </script>
+
+    <!-- Document Fragment -->
+</body>
+</html>

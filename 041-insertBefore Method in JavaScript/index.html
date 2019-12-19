@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="myUL">
+            <li>1</li>
+            <li>2</li>
+            <li id="three">3</li>
+            <li>4</li>
+        </ul>
+    </div>
+
+
+    <script>
+        var parent = document.getElementById("myUL");
+        var newNode = document.createElement("li");
+        newNode.textContent = "5";
+        var refNode = document.getElementById("three");
+        parent.insertBefore(newNode, refNode);
+        
+    
+    </script>
+</body>
+</html>

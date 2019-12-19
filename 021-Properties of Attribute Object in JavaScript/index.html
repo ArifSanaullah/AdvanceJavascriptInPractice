@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="myId" class="myClass">Heading One</h1>
+    <p id="paraId">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, sapiente!</p>
+    <script>
+    var result = document.getElementById("myId")
+    console.log(result)        
+    var getAttr = result.attributes[1].value;
+    console.log(getAttr);
+    console.log(result.attributes.length)
+    for (let i = 0; i < result.attributes.length; i++) {
+        const element = result.attributes[i];
+        document.write(element.name + " = ");
+        document.write(element.value + '<br>')
+        
+    }
+    </script>
+</body>
+</html>

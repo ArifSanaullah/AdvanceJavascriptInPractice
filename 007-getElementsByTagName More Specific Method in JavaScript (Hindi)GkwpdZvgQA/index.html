@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="geek">
+      Hello
+      <span>GeekyShows</span>
+      <em>World</em>
+      <span>Youtube</span>
+    </p>
+    <p id="find"><span>Bye</span>GeekyShows</p>
+    <script>
+      var getbyID = document.getElementById("geek");
+      var result = getbyID.getElementsByTagName("span");
+      document.write(result);
+      console.log(result);
+      // get all in an id
+      var res_1 = document.getElementById("geek").getElementsByTagName("*");
+
+      document.write("<br />" + res_1);
+      console.log(res_1);
+    </script>
+  </body>
+</html>

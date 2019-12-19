@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <script>
+    
+        var newWindow = window.open("https://www.youtube.com/","_blank", "width=800px, height=400px");
+        var btn = document.getElementById("btn");
+        // newWindow.document.write("I'm New Window.");
+        function closeWindow() {
+            newWindow.document.close();
+            newWindow.close();
+        }
+        btn.addEventListener("click", closeWindow);
+    
+    </script>
+</body>
+</html>
