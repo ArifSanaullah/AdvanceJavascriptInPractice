@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form validation</h1>
+    <form name="myForm">
+      Username: <input type="text" name="m_username_field" id="usernameID" />
+      <small id="u_small"></small> <br /><br />
+      <!-- Password:
+      <input type="password" name="m_password_field" id="passwordID" />
+      <br />
+      <br /> -->
+      <input type="submit" value="Submit" name="m_sbtn" id="s_btn" />
+    </form>
+    <!-- <hr /> -->
+    <!-- <hr /> -->
+    <!-- <form name="yourForm">
+      Username: <input type="text" name="y_username_field" id="" /><br /><br />
+      Password:
+      <input type="password" name="y_password_field" id="" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" name="y_sbtn" />
+    </form> -->
+
+    <script>
+      // var mfrom = document.forms['myForm'];
+      // var yfrom = document.yourForm;
+      // console.log(mfrom);
+      // console.log(yfrom);
+
+      // var username = document.getElementById("usernameID");
+      // console.log(username.id);
+
+      function validateData() {
+        var ptrn = /^([^0-9\W]*)$/;
+        if (ptrn.test(document.myForm.m_username_field.value)) {
+          // document.getElementById("usernameID").style.backgroundColor = "green";
+          document.getElementById("u_small").textContent = "Username is valid";
+          document.getElementById("u_small").style.color = "green";
+        } else {
+          document.getElementById("u_small").textContent = "Username is invalid";
+          document.getElementById("u_small").style.color = "red";
+
+        }
+      }
+      document.myForm.m_username_field.addEventListener("keyup", validateData);
+    </script>
+  </body>
+</html>
