@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exception handling</h1>
+
+    <script>
+      function getRectAria(h, w) {
+        console.log("function working");
+        if (isNaN(h) || isNaN(w)) {
+          throw "Parameter is not a number";
+        }
+      }
+      try {
+        getRectAria(2, "A");
+      } catch (e) {
+        document.write(e + "<br>");
+      }
+      try {
+        add();
+        document.write("skipped <br>");
+      } catch (e) {
+        document.write("Message: " + e.messge + "<br>");
+        document.write("Name: " + e.name + "<br>");
+        document.write("Stack: " + e.stack + "<br>");
+      } finally {
+        document.write("will execute in all cases.<br>");
+      }
+    </script>
+  </body>
+</html>
