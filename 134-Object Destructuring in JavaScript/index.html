@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object destructuring</h1>
+
+
+    <script>
+    
+        var course = {
+            name: "JS",
+            duration: "40hrs",
+            tutor: "Udemy"
+        };
+        // in object destructing, it is necessary to use the keynames used in object definition as variable storers.
+        // we can use our own variable names by putting a colon followed by our desired variable name.
+        // like arrays we don't have to iterate over all the values. as we are getting the items of an object by their key names so we can get as many keys from the object as much we require. e.g. we can get one or two key value pairs just by putting the key names of those properties.
+        // var {name:myname, duration:time, tutor:teacher} = course;
+        // console.log(name);
+
+        function show(course) {
+            return course
+        }
+        var {name, duration, tutor} = show(course);
+        console.log(name);
+    </script>
+</body>
+</html>
