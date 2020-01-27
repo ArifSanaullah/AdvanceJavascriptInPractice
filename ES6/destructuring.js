@@ -59,7 +59,11 @@
 // let { bestFriend: {tempremant: localTemprament} } = user;
 
 // console.log(localTemprament);
-
+if ("") {
+    console.log("hi");
+} else {
+    console.log("hello");
+}
 // Array destructuring
 
 // let friends = ["John", "Mike", "Jord"];

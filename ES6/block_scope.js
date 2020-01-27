@@ -29,7 +29,10 @@
 
 // let age = 40;
 // {
-// let age = 39;
+//     let age = 39;
+//     let myFn = function () {
+//         console.log("myFn called")
+//     }
 
 // }
 // console.log(age);
@@ -44,6 +47,8 @@
 //     console.log(name);
 // }
 // foo();
+// console.log(name);
+// let name;
 // console.log(name);
 
 // var name = "Arif";
@@ -65,7 +70,9 @@
 //  YOU CAN'T ACCESS VARIABLES BEFORE YOU DECLARE THEM
 
 // console.log(name);
-
+// const name = "Arif";
+// // name[0] = "farhan";
+// console.log(name)
 // let name = "Arif";
 // console.log(name);
 
@@ -96,6 +103,9 @@
 // funcs.forEach(function(func) {
 //     func();
 // })
+// named = "Arif";
+// console.log(typeof named); 
+// var named;
 
 // let funcs = [];
 // for (let i = 0; i < 9; i++) {
@@ -124,3 +134,13 @@
 // console.log(String)
 
 
+let myObj = {
+    firstName: "Arif",
+    lastName: "Sanaullah",
+    age: 34,
+    skills: {
+        coding: "react"
+    }
+}
+let { firstName, age , skills: {coding}} = myObj;
+console.log(coding)
