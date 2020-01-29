@@ -43,11 +43,11 @@
 
 // let arr = [1, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5];
 // let arrSet = new Set(arr);
-// console.log(arrSet.has(7));
+// // console.log(arrSet.has(7));
 // console.log(arrSet);
 
-// arrSet.delete(5);
-// console.log(arrSet);
+// // arrSet.delete(5);
+// // console.log(arrSet);
 // arrSet.clear();
 // console.log(arrSet);
 
@@ -166,11 +166,11 @@ Map ==> An ordered list of key-value paris.
 
 
 
-let key1 = {},
-    key2 = {},
-    weakMap = new Map([[key1, "First Key"], [key2, "Second Key"]]);
-console.log(weakMap.has(key1));
-console.log(weakMap.get(key1));
-weakMap.delete(key1);
-console.log(weakMap.has(key1));
-console.log(weakMap.get(key1));
+// let key1 = {},
+//     key2 = {},
+//     weakMap = new Map([[key1, "First Key"], [key2, "Second Key"]]);
+// console.log(weakMap.has(key1));
+// console.log(weakMap.get(key1));
+// weakMap.delete(key1);
+// console.log(weakMap.has(key1));
+// console.log(weakMap.get(key1));

@@ -59,11 +59,11 @@
 // let { bestFriend: {tempremant: localTemprament} } = user;
 
 // console.log(localTemprament);
-if ("") {
-    console.log("hi");
-} else {
-    console.log("hello");
-}
+// if ("") {
+//     console.log("hi");
+// } else {
+//     console.log("hello");
+// }
 // Array destructuring
 
 // let friends = ["John", "Mike", "Jord"];
@@ -112,8 +112,8 @@ if ("") {
 
 // console.log(firstC, secondC, thirdC, fourthC);
 
-// Rest parameter
-// let colors = ["red", "Green", "Blue"];
+// // Rest parameter
+// // let colors = ["red", "Green", "Blue"];
 
 // let [...colors2] = colors;
 
@@ -140,6 +140,13 @@ if ("") {
 // console.log(localName, secondC, localTemperament);
 
 
+// const array = ["arif", "dev", 22, { login: ["asd", "asdf"] }]
+// // const [fname, , , obj] = array;
+// // console.log(fname, obj);
+// const merged = [...array, { skills: { coding: "coding", design: "design" } }];
+// console.log(merged)
+// console.log(...merged);
+
 // Destructuring Parameteres
 
 // function setCookie(name, value,
@@ -150,11 +157,9 @@ if ("") {
 //     //     domain = options.domain,
 //     //     path = options.path,
 //     //     expires = options.expires;
-    
+
 //     // Code to set cookie
 //     console.log(secure, domain, path, expires)
 // }
 
 // setCookie("type", "JS", { domain: "www.foo.com" })
-
-

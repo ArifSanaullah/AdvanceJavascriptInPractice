@@ -26,11 +26,17 @@
 
 // TDZ
 
-// function foo(first = second, second) {
-//     console.log(first, second);
-// }
-// foo(undefined, 4)
+function foo(first, second=first) {
+    console.log(first, second);
+}
+foo(4)
 
+function bar(first=second, second) {
+  console.log(first, second);
+}
+bar(4);
+
+// write a function getting two
 // function pick(object, ...keys) {
 //     let result = Object.create(null);
 
@@ -119,6 +125,11 @@
 //     console.log(val,i,nums)
 // })
 
+let obj = {
+    msg: (name) => 
+        "hello " + name
+}
+console.log(obj.msg("Arif"))
 
 // function makeArrowFunctionReturnArgs() {
 //     return () => arguments[0];
@@ -136,10 +147,10 @@
 
 3. The result of the tail call is returned as a function value.
 */
-// "use strict"
-// function doSomething() {
-//     return doSomethingElse();
-// } //valid syntax
+"use strict"
+function doSomething() {
+    return doSomethingElse();
+} //valid syntax
 
 // function doSomething() {
 //   return 1 + doSomethingElse();
@@ -159,26 +170,41 @@
 //     return doSomethingElse();
 // } //closure occured.Inavalid decalartion.
 
+// doSomething();
+// function doSomethingElse() {
+//     console.log("doSeomthingelse")
+//     return "doSomeThingElse";
+// }
 
-function factorial(n) {
-    if (n <= 1) {
-        return 1;
-    } else {
-        // not optimized. must multiply after returning
-        return n * factorial(n - 1);
-    }
-}
-// console.log(factorial(3));
+// (() => {
+//     console.log("Hello world!")
+// })();
 
-function improvedFactorial(n, p=1) {
-    if (n <= 1) {
-        return n * p;
-    } else {
-        console.log(n, p);
-        let result = n * p;
-        // optimized
-        return improvedFactorial(n - 1, result);
-    }
-}
+// let gendre = "female";
+// gendre === "male"
+//     ? console.log("true")
+//     : gendre === "female"
+//         ? console.log("female")t
+//         : console.log("other than all");
+ // function factorial(n) {
+//     if (n <= 1) {
+//         return 1;
+//     } else {
+//         // not optimized. must multiply after returning
+//         return n * factorial(n - 1);
+//     }
+// }
+// // console.log(factorial(3));
 
-console.log(improvedFactorial(5));
+// function improvedFactorial(n, p=1) {
+//     if (n <= 1) {
+//         return n * p;
+//     } else {
+//         console.log(n, p);
+//         let result = n * p;
+//         // optimized
+//         return improvedFactorial(n - 1, result);
+//     }
+// }
+
+// console.log(improvedFactorial(5));
