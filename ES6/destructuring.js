@@ -139,7 +139,6 @@
 
 // console.log(localName, secondC, localTemperament);
 
-
 // const array = ["arif", "dev", 22, { login: ["asd", "asdf"] }]
 // // const [fname, , , obj] = array;
 // // console.log(fname, obj);
@@ -163,3 +162,46 @@
 // }
 
 // setCookie("type", "JS", { domain: "www.foo.com" })
+
+// let obj1 = { name: 'Arif', age: 23 }, obj2 = { profession: "mern dev" };
+// let obj3 = [];
+// obj3[0] = {...obj1, ...obj2}
+// console.log(obj3);
+
+// const func = (fname, { ...all }) => {
+//     console.log(all);
+// }
+
+// func(1, 2, 3, 4)
+// console.log(typeof func);
+
+const prom = new Promise((resolve, reject) => {
+  let success = Math.floor(Math.random() * 10) % 2 === 0 ? true : false;
+  if (success) {
+    resolve("Success");
+  } else {
+    reject("Failure");
+  }
+});
+prom
+  .then(resp => {
+    console.log(resp);
+  })
+  .catch(rej => {
+    console.log(rej);
+  });
+console.log(prom);
+
+const p1 = new Promise((res, rej) => {
+  console.log("This is promise 1");
+  res();
+});
+
+
+p1.then(() => {
+  console.log("Then");
+}).catch(() => {
+  console.log("Catch");
+});
+
+console.log("This is promise 2");
