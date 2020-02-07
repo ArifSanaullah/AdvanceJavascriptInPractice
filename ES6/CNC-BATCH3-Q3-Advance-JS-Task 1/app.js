@@ -19,47 +19,47 @@
 // Write an arrow function that takes in an array of country names and returns the name with the equal characters
 // give the length yourself
 
-let stabled = array => {
-  let primaryResult = new Set();
-  let secondaryResult = new Set();
-  for (let i = 0; i < array.length - 1; i++) {
-    for (let j = i + 1; j < array.length; j++) {
-      if (
-        array[i].length === array[j].length ||
-        (![array[i], array[j]] || ![array[j], array[i]])
-      ) {
+// let stabled = array => {
+//   let primaryResult = new Set();
+//   let secondaryResult = new Set();
+//   for (let i = 0; i < array.length - 1; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//       if (
+//         array[i].length === array[j].length ||
+//         (![array[i], array[j]] || ![array[j], array[i]])
+//       ) {
         
-        console.log(
+//         // console.log(
           
-            ![array[j], array[i]]
-        );
+//         //     ![array[j], array[i]]
+//         // );
 
-        secondaryResult.add([array[i], array[j]]);
+//         secondaryResult.add([array[i], array[j]]);
 
-      }
-    }
-    primaryResult.add([...secondaryResult]);
-  }
-  console.log(secondaryResult);
+//       }
+//     }
+//     primaryResult.add([...secondaryResult]);
+//   }
+//   // console.log(secondaryResult);
 
-  primaryResult = [...primaryResult];
+//   primaryResult = [...primaryResult];
 
-  return [primaryResult[primaryResult.length - 1]];
-};
-console.log(
-  stabled([
-    "one",
-    "two",
-    "three",
-    "four",
-    "five",
-    "six",
-    "seven",
-    "eight",
-    "nine",
-    "ten"
-  ])
-);
+//   return [...primaryResult[primaryResult.length - 1]];
+// };
+// console.log(
+//   stabled([
+//     "one",
+//     "two",
+//     "three",
+//     "four",
+//     "five",
+//     "six",
+//     "seven",
+//     "eight",
+//     "nine",
+//     "ten"
+//   ])
+// );
 
 // ***********************************
 
@@ -313,14 +313,13 @@ console.log(
 //     for (let i = 0; i < data.length; i++) {
 //         const user = data[i];
 //         if (name === user.name) {
-//             // data.pop(user);
-//             break;
+//             data.pop(user);
 //         }
 
 //     }
 // }
 // console.log(data);
-// removeUser("Arif");
+// removeUser("Umair");
 // console.log(data);
 
 // /*3. Create a feature that allows us to search a particular user from our
