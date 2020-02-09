@@ -146,3 +146,4 @@ q.print();
 q.dequeue();
 console.log(q.front());
 q.print();
+q.print();
